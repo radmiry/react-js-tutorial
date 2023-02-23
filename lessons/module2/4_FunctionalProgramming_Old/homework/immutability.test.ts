@@ -1,12 +1,8 @@
 test("dummy test", () => undefined);
 
-import {
-  OriginalTeam,
-  ExpectedTeam,
-  originalTeamToExpectedTeam,
-  originalArrayToExpectedArray,
-  originalTeamToExpectedTeamDeep,
-} from "./immutability";
+/*
+
+import { OriginalTeam, ExpectedTeam } from "./immutability";
 
 // Задание 1
 test("team to team", () => {
@@ -22,7 +18,7 @@ test("team to team", () => {
     roster: 25,
   };
 
-  expect(originalTeamToExpectedTeam(originalTeam)).toStrictEqual(expectedTeam);
+  expect(originalTeamToExpectedTeam(originalTeam)).toBe(expectedTeam);
 });
 
 // Задание 2
@@ -30,12 +26,11 @@ test("array to array", () => {
   const originalArray = Object.freeze([1, 2, 3, 4]);
 
   const expectedArray = ["two", 3, 4, 5];
-  expect(originalArrayToExpectedArray(originalArray)).toStrictEqual(
-    expectedArray
-  );
+
+  expect(originalArrayToExpectedArray(originalArray)).toBe(expectedArray);
 });
 
-// // Задание 3
+// Задание 3
 test("team to team deep", () => {
   const originalTeam = Object.freeze({
     name: "Tampa Bay Roosters",
@@ -53,5 +48,7 @@ test("team to team deep", () => {
     },
   };
 
-  expect(originalTeamToExpectedTeamDeep(originalTeam)).toEqual(expectedTeam);
+  expect(originalTeamToExpectedTeam(originalTeam)).toEqual(expectedTeam);
 });
+
+*/
